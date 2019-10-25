@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tmac/bloc/bloc1.dart';
 import 'package:flutter_tmac/rxdart/rxdart1.dart';
 import 'package:flutter_tmac/rxdart/rxdart2.dart';
 import 'package:flutter_tmac/rxdart/rxdart3.dart';
+import 'package:flutter_tmac/rxdart/rxdart4.dart';
+import 'package:flutter_tmac/rxdart/rxdart5.dart';
 import 'package:flutter_tmac/stream/stream1.dart';
 import 'package:flutter_tmac/stream/stream2.dart';
 import 'package:flutter_tmac/stream/stream3.dart';
@@ -51,6 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTileW("Rxdart学习系列--Rxdart初体验", "这个看看", Rxdart1()),
             ListTileW("Rxdart学习系列--创建Observable的几种方法", "这个看看", Rxdart2()),
             ListTileW("Rxdart学习系列--subjects控制Observable", "这个看看", Rxdart3()),
+            ListTileW("Rxdart学习系列--向Observable添加数据", "这个看看", Rxdart4()),
+            ListTileW("Rxdart学习系列--debounceTime方法", "这个看看", Rxdart5()),
+            ListTileW("Bloc学习系列--Bloc模式初体验", "这个看看", Bloc1()),
+            
           ],
         ));
   }
