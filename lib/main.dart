@@ -4,6 +4,8 @@ import 'package:flutter_tmac/stream/stream2.dart';
 import 'package:flutter_tmac/stream/stream3.dart';
 import 'package:flutter_tmac/stream/stream4.dart';
 import 'package:flutter_tmac/stream/stream5.dart';
+import 'package:flutter_tmac/stream/stream6.dart';
+import 'package:flutter_tmac/stream/stream7.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,7 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTileW("Stream学习系列2-Stream监听方法", "这个看看", Stream2()),
             ListTileW("Stream学习系列3-StreamSubscription", "这个看看", Stream3()),
             ListTileW("Stream学习系列4-StreamController", "这个看看", Stream4()),
-            ListTileW("Stream学习系列4-StreamSink", "这个看看", Stream5()),
+            ListTileW("Stream学习系列5-StreamSink", "这个看看", Stream5()),
+            ListTileW("Stream学习系列6-StreamController-多次监听", "这个看看", Stream6()),
+            ListTileW("Stream学习系列7--StreamBuilder运用", "这个看看", Stream7()),
           ],
         ));
   }
