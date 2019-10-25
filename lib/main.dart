@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tmac/rxdart/rxdart1.dart';
+import 'package:flutter_tmac/rxdart/rxdart2.dart';
+import 'package:flutter_tmac/rxdart/rxdart3.dart';
 import 'package:flutter_tmac/stream/stream1.dart';
 import 'package:flutter_tmac/stream/stream2.dart';
 import 'package:flutter_tmac/stream/stream3.dart';
@@ -45,6 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTileW("Stream学习系列5-StreamSink", "这个看看", Stream5()),
             ListTileW("Stream学习系列6-StreamController-多次监听", "这个看看", Stream6()),
             ListTileW("Stream学习系列7--StreamBuilder运用", "这个看看", Stream7()),
+            ListTileW("Rxdart学习系列--Rxdart初体验", "这个看看", Rxdart1()),
+            ListTileW("Rxdart学习系列--创建Observable的几种方法", "这个看看", Rxdart2()),
+            ListTileW("Rxdart学习系列--subjects控制Observable", "这个看看", Rxdart3()),
           ],
         ));
   }
