@@ -67,8 +67,8 @@ class _RxDartDemoHomeState extends State<RxDartDemoHome> {
         }
       }
       
-      class ( {
-}
+     
+
 
 
   
