@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tmac/stream/stream1.dart';
 import 'package:flutter_tmac/stream/stream2.dart';
 import 'package:flutter_tmac/stream/stream3.dart';
+import 'package:flutter_tmac/stream/stream4.dart';
+import 'package:flutter_tmac/stream/stream5.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,9 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(title: Text("Tmac")),
         body: ListView(
           children: <Widget>[
-            ListTileW("Stream学习系列1", "这个看看", Stream1()),
-            ListTileW("Stream学习系列2", "这个看看", Stream2()),
-            ListTileW("Stream学习系列3", "这个看看", Stream3()),
+            ListTileW("Stream学习系列1-Stream初体验", "这个看看", Stream1()),
+            ListTileW("Stream学习系列2-Stream监听方法", "这个看看", Stream2()),
+            ListTileW("Stream学习系列3-StreamSubscription", "这个看看", Stream3()),
+            ListTileW("Stream学习系列4-StreamController", "这个看看", Stream4()),
+            ListTileW("Stream学习系列4-StreamSink", "这个看看", Stream5()),
           ],
         ));
   }
