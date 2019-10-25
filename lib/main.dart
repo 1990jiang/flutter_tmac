@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tmac/stream/stream1.dart';
+import 'package:flutter_tmac/stream/stream2.dart';
+import 'package:flutter_tmac/stream/stream3.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,6 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
         body: ListView(
           children: <Widget>[
             ListTileW("Stream学习系列1", "这个看看", Stream1()),
+            ListTileW("Stream学习系列2", "这个看看", Stream2()),
+            ListTileW("Stream学习系列3", "这个看看", Stream3()),
           ],
         ));
   }

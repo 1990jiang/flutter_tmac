@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Stream1 extends StatelessWidget {
-  const Stream1({Key key}) : super(key: key);
+class Stream2 extends StatelessWidget {
+  const Stream2({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
-         title: Text("stream1"),
+         title: Text("Stream2"),
        ),
        body:StreamDemoHome(),
     );
@@ -30,12 +30,21 @@ class _StreamDemoHomeState extends State<StreamDemoHome> {
     print("create a stream");
     Stream<String> _streamDemo = Stream.fromFuture(fetchData());
     print("Start listening on a stream");
-    //监听这个数据返回情况
-    _streamDemo.listen(onData);
+    _streamDemo.listen(onData,onError: onError,onDone: onDone);
     print("Initialize stream listem");
   }
+
+  //数据加载成功
   void onData(String data){
     print("$data");
+  }
+  //数据加载失败
+  void onError(error){
+    print("Error : $error");
+  }
+  //数据加载完成
+  void onDone(){
+    print("数据加载完成");
   }
   //请求数据方法
   Future<String> fetchData() async {
